@@ -17,7 +17,7 @@ import { color, defaultTheme, RneFunctionComponent } from '../helpers';
 
 export interface CheckBoxProps extends PressableProps, CheckBoxIconProps {
   /** Specify React Native component for main button. */
-  Component?: typeof React.Component;
+  Component?: React.ElementType;
 
   /** Moves icon to right of text. */
   iconRight?: boolean;

@@ -29,7 +29,7 @@ export interface ButtonGroupProps extends InlinePressableProps {
   button?: object;
 
   /** Choose other button component such as TouchableOpacity. */
-  Component?: typeof React.Component;
+  Component?: React.ElementType;
 
   /** Method to update Button Group Index. */
   onPress?(...args: any[]): void;

@@ -35,7 +35,7 @@ export interface BadgeProps extends InlinePressableProps {
   /** Custom component to replace the badge outer component.
    *  @default `Press handlers present then Pressable else View`
    */
-  Component?: typeof React.Component;
+  Component?: React.ElementType;
 
   /** Determines color of the indicator. */
   status?: 'primary' | 'success' | 'warning' | 'error';

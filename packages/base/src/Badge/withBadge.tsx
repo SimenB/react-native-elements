@@ -19,7 +19,7 @@ export const withBadge =
     /** Also receives all [Badge](badge.mdx#props) props. */
     options: withBadgeOptions = {}
   ) =>
-  (WrappedComponent: React.ComponentType<any>): React.ComponentType => {
+  (WrappedComponent: React.ComponentType): React.ElementType => {
     const WithBadge = (props: any) => {
       const {
         bottom,

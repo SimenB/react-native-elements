@@ -18,10 +18,10 @@ export interface ImageProps extends RNImageProps, InlinePressableProps {
   /** Define the component passed to image.
    *  @default `Press handlers present then Pressable else View`
    */
-  Component?: typeof React.Component;
+  Component?: React.ElementType;
 
   /** Specify a different component as the Image component. */
-  ImageComponent?: typeof React.Component;
+  ImageComponent?: React.ElementType;
 
   /** Content to load when Image is rendering.
    */

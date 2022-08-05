@@ -64,7 +64,7 @@ export interface IconProps extends InlinePressableProps, IconButtonProps {
   /** Update React Native Component.
    *  @default `Press handlers present then Pressable else View`
    */
-  Component?: typeof React.Component;
+  Component?: React.ElementType;
 
   /** Reverses color scheme. */
   reverse?: boolean;

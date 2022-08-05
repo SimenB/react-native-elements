@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { View } from 'react-native';
 
 export interface PadViewProps {
-  Component: React.ComponentClass;
+  Component: React.ElementType;
   pad: number;
 }
 
@@ -12,7 +12,7 @@ export const PadView: React.FC<PadViewProps> = ({
   Component,
   ...props
 }) => {
-  const _root = useRef(null);
+  const _root = useRef<View>(null);
 
   const length = React.Children.count(children);
   const Container = Component || View;

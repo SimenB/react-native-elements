@@ -80,7 +80,7 @@ export interface TileProps extends PressableProps {
   /** Custom ImageComponent for Tile.
    * @default RNE Image
    */
-  ImageComponent?: typeof React.Component;
+  ImageComponent?: React.ElementType;
 }
 
 /** Tiles like Cards, are a convenient way to display related content about a single subject.

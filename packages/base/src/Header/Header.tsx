@@ -26,7 +26,7 @@ export interface HeaderProps extends ViewProps {
    *
    * @default View
    */
-  ViewComponent?: typeof React.Component;
+  ViewComponent?: React.ElementType;
 
   /** Displays a linear gradient. See [usage](#lineargradient-usage). */
   linearGradientProps?: Object;
@@ -98,7 +98,7 @@ export const Header: RneFunctionComponent<HeaderProps> = ({
   children = [],
   linearGradientProps,
   ViewComponent = linearGradientProps || !backgroundImage
-    ? View
+    ? (View as React.ElementType)
     : ImageBackground,
   theme = defaultTheme,
   elevated,

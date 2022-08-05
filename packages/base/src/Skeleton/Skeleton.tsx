@@ -37,7 +37,7 @@ export interface SkeletonProps extends ViewProps {
    * Custom Linear Gradient Component
    * @type React Component
    */
-  LinearGradientComponent?: React.ComponentType<any>;
+  LinearGradientComponent?: React.ElementType;
 }
 
 /**

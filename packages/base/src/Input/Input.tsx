@@ -68,7 +68,7 @@ export interface InputProps
    * component that will be rendered in place of the React Native TextInput
    * @type React Component
    */
-  InputComponent?: React.ComponentType | React.ForwardRefExoticComponent<any>;
+  InputComponent?: React.ElementType | React.ForwardRefExoticComponent<any>;
   /**
    * props to be passed to the React Native Text component used to display the error message
    */

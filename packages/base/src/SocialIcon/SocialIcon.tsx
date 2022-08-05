@@ -92,7 +92,7 @@ export interface SocialIconProps extends InlinePressableProps {
   /** Type of button.
    *  @default `Press handlers present then Pressable else View`
    */
-  Component?: typeof React.Component;
+  Component?: React.ElementType;
 
   /** Social media type. */
   type?: SocialMediaType;

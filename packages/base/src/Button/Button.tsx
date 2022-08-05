@@ -40,7 +40,7 @@ const positionStyle = {
   bottom: 'column-reverse',
   left: 'row',
   right: 'row-reverse',
-};
+} as const;
 
 export interface ButtonProps
   extends TouchableOpacityProps,
@@ -85,10 +85,10 @@ export interface ButtonProps
   linearGradientProps?: object;
 
   /** Component for user interaction. */
-  TouchableComponent?: typeof React.Component;
+  TouchableComponent?: React.ElementType;
 
   /** Component for container. */
-  ViewComponent?: typeof React.Component;
+  ViewComponent?: React.ElementType;
 
   /** Disables user interaction. */
   disabled?: boolean;
@@ -218,7 +218,7 @@ export const Button: RneFunctionComponent<ButtonProps> = ({
   );
 
   // Refactor to Pressable
-  const TouchableComponentInternal =
+  const TouchableComponentInternal: React.ElementType =
     TouchableComponent ||
     Platform.select({
       android: linearGradientProps ? TouchableOpacity : TouchableNativeFeedback,

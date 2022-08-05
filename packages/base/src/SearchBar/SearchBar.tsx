@@ -40,7 +40,7 @@ export class SearchBar extends React.Component<
   };
 
   render() {
-    const Component: typeof React.Component =
+    const Component: React.ElementType =
       SEARCH_BAR_COMPONENTS[this.props.platform] || SearchBarDefault;
 
     return (

@@ -31,7 +31,7 @@ export interface OverlayProps
   fullScreen?: boolean;
 
   /** Override React Native `Modal` component (usable for web-platform). */
-  ModalComponent?: typeof React.Component;
+  ModalComponent?: React.ElementType;
 }
 
 /** The Overlay is a view that floats above an app’s content.

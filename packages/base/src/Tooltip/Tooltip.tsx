@@ -75,7 +75,7 @@ export interface TooltipProps {
   closeOnlyOnBackdropPress?: boolean;
 
   /** Override React Native `Modal` component (usable for web-platform). */
-  ModalComponent?: typeof React.Component;
+  ModalComponent?: React.ElementType;
 
   /** Style to be applied on the pointer. */
   pointerStyle?: StyleProp<ViewStyle>;

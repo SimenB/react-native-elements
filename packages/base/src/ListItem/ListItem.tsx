@@ -28,10 +28,10 @@ export interface ListItemProps extends PressableProps {
   pad?: number;
 
   /** Replace element with custom element. */
-  Component?: typeof React.Component;
+  Component?: React.ElementType;
 
   /** Container for linear gradient. */
-  ViewComponent?: typeof React.Component;
+  ViewComponent?: React.ElementType;
 
   /** Props for linear gradient component. */
   linearGradientProps?: any;

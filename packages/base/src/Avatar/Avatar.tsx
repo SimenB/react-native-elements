@@ -36,7 +36,7 @@ export interface AvatarProps extends InlinePressableProps {
    *
    *  @default `Press handlers present then Pressable else View`
    */
-  Component?: typeof React.Component;
+  Component?: React.ElementType;
 
   /** Callback function when pressing component. */
   onPress?(): void;
@@ -87,7 +87,7 @@ export interface AvatarProps extends InlinePressableProps {
   imageProps?: Partial<ImageProps>;
 
   /** Custom ImageComponent for Avatar. */
-  ImageComponent?: React.ComponentClass;
+  ImageComponent?: React.ComponentType;
 }
 
 /**
